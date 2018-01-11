@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="en" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Playground: Scroll to elements on a large background</title>
+	<meta name="description" content="description">
+	<meta name="keywords" content="keywords">
+	<meta name="author" content="Ray Hyde | www.rayhyde.nl">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+	<!--[if (lte IE 9)|!(IE)]><link rel="icon" href="favicon.ico"><![endif]-->
+	<script src="https://use.fontawesome.com/25a98fcc6a.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/map_scroll.css">
+	<style>
+
+
+	</style>
+</head>
+
+<body>
+	<div id="explain">
+		<h2>Scroll to elements on a large background</h2>
+		<p>This uses scrollTo to move to different points on a large background.</p>
+		<p>Scrolling starts by clicking on the menu or in the coloured boxes at each stop.</p>
+		<p>Coloured info boxes automatically open at each stop.</p>
+		<p>Clicking outside a coloured box closes it; clicking on a closed city opens it.</p>
+	</div>
+	<nav id="main-nav">
+	<div class="bg"></div>
+		<ul>
+			<li><a class="box0" href="">New York</a></li>
+			<li><a class="box1" href="">London</a></li>
+			<li><a class="box2" href="">Cape Town</a></li>
+			<li><a class="box3" href="">Peking</a></li>
+			<li><a class="box4" href="">Sydney</a></li>
+		</ul>
+	</nav>
+	<div class="outerWrap">
+		<div class="wrap">
+			<div class="ball" id="box0">
+				<div class="inner">
+					<h2>New York</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, culpa rerum magnam nulla totam unde soluta pariatur eligendi tempore repellendus explicabo sint ipsam corrupti optio iure possimus velit maxime reiciendis!</p>
+					<p><a class="box4 boxlink" href="">&lt; Sydney</a></p>
+					<p><a class="box1 boxlink right" href="">London &gt;</a></p>
+				</div>
+			</div>
+			<div class="ball" id="box1">
+				<div class="inner">
+					<h2>London</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, culpa rerum magnam nulla totam unde soluta pariatur eligendi tempore repellendus explicabo sint ipsam corrupti optio iure possimus velit maxime reiciendis!</p>
+					<p><a class="box0 boxlink" href="">&lt; New York</a></p>
+					<p><a class="box2 boxlink right" href="">Cape Town &gt;</a></p>
+				</div>
+			</div>
+			<div class="ball" id="box2">
+				<div class="inner">
+					<h2>Cape Town</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, culpa rerum magnam nulla totam unde soluta pariatur eligendi tempore repellendus explicabo sint ipsam corrupti optio iure possimus velit maxime reiciendis!</p>
+					<p><a class="box1 boxlink" href="">&lt; London</a></p>
+					<p><a class="box3 boxlink right" href="">Peking &gt;</a></p>
+				</div>
+			</div>
+			<div class="ball" id="box3">
+				<div class="inner">
+					<h2>Peking</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, culpa rerum magnam nulla totam unde soluta pariatur eligendi tempore repellendus explicabo sint ipsam corrupti optio iure possimus velit maxime reiciendis!</p>
+					<p><a class="box2 boxlink" href="">&lt; Cape Town</a></p>
+					<p><a class="box4 boxlink right" href="">Sydney &gt;</a></p>
+				</div>
+			</div>
+			<div class="ball" id="box4">
+				<div class="inner">
+					<h2>Sydney</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, culpa rerum magnam nulla totam unde soluta pariatur eligendi tempore repellendus explicabo sint ipsam corrupti optio iure possimus velit maxime reiciendis!</p>
+					<p><a class="box3 boxlink" href="">&lt; Peking</a></p>
+					<p><a class="box0 boxlink right" href="">New York &gt;</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/map_scroll.js"></script>
+</body>
+
+</html>
